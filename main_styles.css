@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Cehua';
+    src: url('font/CehuaFreeFree-K7eMl.otf') format('opentype'); /* Added missing semicolon */
+}
+
+@font-face {
+    font-family: 'latoblack';
+    src: url('font/LATO-BLACK.TTF') format('truetype'); /* Added missing semicolon */
+}
+
+@font-face {
+    font-family: 'latoreg';
+    src: url('font/LATO-REGULAR.TTF') format('truetype'); /* Added missing semicolon */
+}
+  
+.cehuafont {
+    font-family: 'Cehua';
+    text-align: center;
+  }
+
+.latobfont {
+font-family: 'latoblack';
+text-align: center;
+}
+
+.latorfont {
+    font-family: 'latoreg';
+    text-align: center;
+    }
+
+/* 700px or smaller */
+@media only screen and (max-width: 700px) {
+
+.center-table, td {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* background-color: rgba(255, 255, 255, 0.25); */
+}
+
+.tContainer{
+    transform: scale(100%);
+    overflow-x: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+}
