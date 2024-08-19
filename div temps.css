@@ -1,3 +1,46 @@
+/* Logo Popup */
+.logo_pop {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px);
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    animation: fadeOut linear 2s ; /* Add animation */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+        backdrop-filter: blur(50px);
+        
+        
+    }
+
+    50% {
+        opacity: 50%;
+        
+        
+    }
+
+    100% {
+        opacity: 0%;
+        backdrop-filter: blur(0px);
+        
+    }
+}
+
+.logo_pop img {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
+    transform: scale(0.5); /* Use transform instead of scale */
+}
+
 /* Long Div */
 
 .long {
