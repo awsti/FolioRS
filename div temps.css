@@ -87,3 +87,56 @@
     transition: all ease-in-out .5s;
 
 }
+
+/* Piece Gallery */
+
+.gpiece{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative; /* Add this line */
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, .25);
+}
+
+.gpiece:hover{
+    width: 550px;
+    height: 550px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative; /* Add this line */
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, .5);
+    transition: all ease-in-out .5s;
+}
+
+.gpiece img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    filter: blur(0px);
+}
+
+.gpiece:hover img { 
+
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, .75);
+    scale: 50%;
+    filter: blur(0px);
+    transition: all ease-in-out .5s;
+
+}
+
+.gpiece:active img { 
+
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, .75);
+    scale: 150%;
+    filter: blur(0px);
+    transition: all ease-in-out .5s;
+
+}
