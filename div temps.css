@@ -211,3 +211,30 @@ top: -0;
 footer h6{
     font-size: 9px;
 }
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, .5);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(136, 136, 136); 
+    border-radius: 25px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0);
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, .5);
+    transition: all ease-in-out .5s;
+  }
