@@ -247,3 +247,60 @@ footer h6{
     height: 750px; 
     margin-left: auto; margin-right: auto;
   }
+
+  /* Social Media */
+  /* Piece Gallery */
+
+.sPiece{
+    border-radius: 15px;
+    width: 200px;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative; /* Add this line */
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, .25);
+}
+
+.sPiece:hover{
+    width: 210px;
+    border-radius: 25px;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative; /* Add this line */
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, .5);
+    transition: all ease-in-out .5s;
+}
+
+.sPiece img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    filter: blur(0px);
+}
+
+.sPiece:hover img { 
+
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, .75);
+    scale: 110%;
+    filter: blur(0px);
+    transition: all ease-in-out .5s;
+
+}
+
+.sPiece:active img { 
+
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, .75);
+    scale: 150%;
+    filter: blur(0px);
+    transition: all ease-in-out .5s;
+    cursor: zoom-in;
+
+}
