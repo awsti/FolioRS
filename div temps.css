@@ -475,10 +475,12 @@ footer h6{
     
     .home_long {
         width: 75%;
-        height: 325px;
+        height: 350px;
         background-color: rgba(0, 0, 0, 0.1);
         margin-left: auto;
         margin-right: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
         text-align: center;
         overflow: hidden;
         position: relative;
