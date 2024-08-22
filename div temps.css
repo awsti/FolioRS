@@ -425,6 +425,42 @@ footer h6{
     transform: scale(0.25); /* Use transform instead of scale */
 }
 
+/* Gallery Piece */
+
+.gpiece{
+    width: 100px;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative; /* Add this line */
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, .25);
+}
+
+.gpiece:hover{
+    width: 75%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative; /* Add this line */
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, .5);
+    transition: all ease-in-out .5s;
+}
+
+.gpiece:hover img { 
+
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, .75);
+    scale: 95%;
+    filter: blur(0px);
+    transition: all ease-in-out .5s;
+
+}
+
     /* Home Logo Div */
     @keyframes home_long_trans {
         0% {
@@ -439,7 +475,7 @@ footer h6{
     
     .home_long {
         width: 75%;
-        height: 100px;
+        height: 350px;
         background-color: rgba(0, 0, 0, 0.1);
         margin-left: auto;
         margin-right: auto;
