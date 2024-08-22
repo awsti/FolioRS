@@ -41,14 +41,28 @@
 <!-- <body style="background-color: rgb(75, 75, 75);"> -->
 <body style="background-color: rgb(255, 255, 255);">
 
-<!-- Logo Fade -->
-<script>
+<!-- Logo Fade OLD -->
+<!-- <script>
     window.onload = function() {
         setTimeout(function() {
             document.querySelector('.logo_pop').style.display = 'none';
         }, 2000); // 2.0 second
     };
+</script> -->
+
+<!-- Logo Fade NEW & Logo Div -->
+<script>
+    window.onload = function() {
+        // Hide the logo_pop after 2 seconds
+        setTimeout(function() {
+            document.querySelector('.logo_pop').style.display = 'none';
+        }, 2000); // 2.0 seconds
+
+        // Trigger the home_long_trans animation
+        document.querySelector('.home_long img').classList.add('animate');
+    };
 </script>
+
 <div class="logo_pop">
     <img src="media/logo/RS Logo PNG.png"/>
 </div>
@@ -87,6 +101,20 @@
     
     </div>    
     
+
+<hr>
+
+<!-- Home Long Div -->
+<div class="home_long">
+    <!-- <a href="about.html">             -->
+    <h4 class="cehuafont"> 
+        Restful Still 
+    </h4>
+    <!-- </a> -->
+        <img src="media/logo/RS Logo PNG.png"/>
+        
+    
+</div>
 
 <hr>
 
