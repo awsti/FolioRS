@@ -305,9 +305,21 @@ footer h6{
 
 /* Home Banner */
 
+@keyframes home_long_trans {
+    0% {
+        width: 10%;
+        filter: blur(45px) drop-shadow(0 0 25px rgb(0, 0, 0, .75));
+    }
+    100% {
+        width: 15%;
+        filter: blur(0px) drop-shadow(0 0 15px rgb(0, 0, 0, .5));
+    }
+}
+
 .home_long {
+    scale: 110%;
     width: 75%;
-    height: 150px;
+    height: 500px;
     background-color: rgba(0, 0, 0, 0.1);
     margin-left: auto;
     margin-right: auto;
@@ -321,7 +333,7 @@ footer h6{
 
 .home_long:hover {
     width: 75%;
-    height: 250px;
+    height: 350px;
     background-color: rgba(0, 0, 0, 0.1);
     margin-left: auto;
     margin-right: auto;
@@ -363,16 +375,20 @@ footer h6{
     filter: blur(45px) drop-shadow(0 0 25px rgb(0, 0, 0, .75));
 }
 
-.home_long:hover img { 
+.home_long img.animate {
+    animation: home_long_trans 1s ease-in-out forwards;
+}
+
+/* .home_long:hover img {  */
     /* scale: 15%; */
-    width: 15%;
-    filter: blur(0px) drop-shadow(0 0 15px rgb(0, 0, 0, .5));
+    /* width: 15%; */
+    /* filter: blur(0px) drop-shadow(0 0 15px rgb(0, 0, 0, .5)); */
     /* transform: translateY(-265%); */
     /* box-shadow: 0px 0px 50px rgb(0, 0, 0); */
     /* filter: drop-shadow(0 0 25px rgb(0, 0, 0, .75)); */
-    transition: all ease-in-out 1s;
+    /* transition: all ease-in-out 1s; */
 
-}
+/* } */
 
 .home_long:hover a h4 { 
 
@@ -396,3 +412,80 @@ footer h6{
     transition: all ease-in-out .5s;
 
 }
+
+/* 700px or smaller */
+@media only screen and (max-width: 700px) {
+
+/* Logo Pop */
+.logo_pop img {
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
+    transform: scale(0.25); /* Use transform instead of scale */
+}
+
+    /* Home Logo Div */
+    @keyframes home_long_trans {
+        0% {
+            width: 10%;
+            filter: blur(45px) drop-shadow(0 0 25px rgb(0, 0, 0, .75));
+        }
+        100% {
+            width: 15%;
+            filter: blur(0px) drop-shadow(0 0 15px rgb(0, 0, 0, .5));
+        }
+    }
+    
+    .home_long {
+        width: 75%;
+        height: 100px;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        display: flex; /* Add this line */
+        justify-content: center; /* Add this line */
+        align-items: center; /* Add this line to center vertically */
+    }
+    
+    .home_long:hover {
+        width: 75%;
+        height: 70px;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        overflow: hidden;
+        position: relative; /* Add this line */
+        box-shadow: 0px 0px 15px rgb(0, 0, 0, .5);
+        backdrop-filter: blur(25px);
+        transition: all ease-in-out .5s;
+    }
+    
+    .home_long img {
+        display: block;
+        width: 10%;
+        height: auto;
+        margin: auto;
+        filter: blur(45px) drop-shadow(0 0 25px rgb(0, 0, 0, .75));
+    }
+    
+    .home_long img.animate {
+        animation: home_long_trans 1s ease-in-out forwards;
+    }
+    
+    .home_long .cehuafont {
+        position: absolute; /* Add this line */
+        top: 50%; /* Adjust as needed */
+        left: 50%; /* Adjust as needed */
+        transform: translate(-50%, -50%); /* Center the text */
+        color: rgb(255, 255, 255); /* Optional: Change text color for better visibility */
+        z-index: 1; /* Ensure the text is above the image */
+        text-shadow: 0px 0px 15px rgb(0, 0, 0);
+        font-size: small;
+    }
+    
+    }

@@ -104,42 +104,6 @@ text-align: center;
     transition: all ease-in-out .5s;
 }
 
-/* Home Logo Div */
-@keyframes home_long_trans {
-    0% {
-        width: 10%;
-        filter: blur(45px) drop-shadow(0 0 25px rgb(0, 0, 0, .75));
-    }
-    100% {
-        width: 15%;
-        filter: blur(0px) drop-shadow(0 0 15px rgb(0, 0, 0, .5));
-    }
-}
 
-.home_long img {
-    display: block;
-    width: 10%;
-    height: auto;
-    margin: auto;
-    filter: blur(45px) drop-shadow(0 0 25px rgb(0, 0, 0, .75));
-}
-
-.home_long img.animate {
-    animation: home_long_trans 1s ease-in-out forwards;
-}
-
-.home_long:hover {
-    width: 75%;
-    height: 250px;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    overflow: hidden;
-    position: relative; /* Add this line */
-    box-shadow: 0px 0px 15px rgb(0, 0, 0, .5);
-    backdrop-filter: blur(25px);
-    transition: all ease-in-out .5s;
-}
 
 }
